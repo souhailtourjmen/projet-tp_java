@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="194.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.controllerTicket">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <center>
+            <AnchorPane prefHeight="310.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="213.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="178.06597290039065" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+                     <image>
+                        <Image url="@../img/ticket%20mockup.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane prefHeight="190.0" prefWidth="590.0">
+                     <children>
+                        <Label fx:id="passName" layoutX="41.0" layoutY="71.0" prefHeight="18.0" prefWidth="107.0" text="Label" textFill="#082032" />
+                        <Label fx:id="from" layoutX="45.0" layoutY="108.0" prefHeight="18.0" prefWidth="107.0" text="Label" textFill="#082032" />
+                        <Label fx:id="to" layoutX="47.0" layoutY="140.0" prefHeight="18.0" prefWidth="107.0" text="Label" textFill="#082032" />
+                        <Label fx:id="date" layoutX="204.0" layoutY="59.0" prefHeight="18.0" prefWidth="107.0" text="Label" textFill="#082032" />
+                        <Label fx:id="time" layoutX="204.0" layoutY="91.0" prefHeight="18.0" prefWidth="107.0" text="Label" textFill="#082032" />
+                        <Label layoutX="176.0" layoutY="140.0" prefHeight="18.0" prefWidth="37.0" text="Label" textFill="WHITE" />
+                        <Label layoutX="224.0" layoutY="140.0" prefHeight="18.0" prefWidth="37.0" text="Label" textFill="WHITE" />
+                        <Label layoutX="280.0" layoutY="140.0" prefHeight="18.0" prefWidth="37.0" text="Label" textFill="WHITE" />
+                        <Label fx:id="comp" layoutX="34.0" layoutY="24.0" prefHeight="18.0" prefWidth="107.0" text="Label" textFill="#f4f0f0" />
+                        <Label fx:id="numpass" layoutX="487.0" layoutY="56.0" prefHeight="18.0" prefWidth="107.0" text="Label" textFill="#082032" />
+                        <Label fx:id="from2" layoutX="469.0" layoutY="78.0" prefHeight="18.0" prefWidth="107.0" text="Label" textFill="#082032" />
+                        <Label fx:id="to2" layoutX="470.0" layoutY="97.0" prefHeight="18.0" prefWidth="107.0" text="Label" textFill="#082032" />
+                        <Label layoutX="461.0" layoutY="125.0" prefHeight="18.0" prefWidth="42.0" text="Label" textFill="#082032" />
+                        <Label layoutX="527.0" layoutY="125.0" prefHeight="18.0" prefWidth="42.0" text="Label" textFill="#082032" />
+                        <Label layoutX="363.0" layoutY="162.0" prefHeight="18.0" prefWidth="41.0" text="1:30h" textFill="#082032">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

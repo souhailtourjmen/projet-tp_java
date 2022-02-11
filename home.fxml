@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="699.0" prefWidth="900.0" style="-fx-background-color: #082032;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.controlerhome">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="686.0" layoutX="9.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="887.0" />
+      <ScrollPane fx:id="scrol" hbarPolicy="ALWAYS" prefHeight="700.0" prefWidth="900.0" style="-fx-background-radius: 30;" vbarPolicy="ALWAYS" AnchorPane.topAnchor="0.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <content>
+            <GridPane fx:id="grid" alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="772.0" prefWidth="1011.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="703.1999999999999" minHeight="0.0" prefHeight="329.0666564941406" valignment="CENTER" vgrow="ALWAYS" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="775.0" fitWidth="1049.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/pexels-jeshootscom-1201995.jpg" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <AnchorPane>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff0a" height="75.0" layoutX="95.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: #FF4C29;" width="682.0" />
+                        <DatePicker fx:id="depart" layoutX="381.0" layoutY="41.0" prefHeight="28.0" prefWidth="107.0" promptText="Depart" />
+                        <DatePicker fx:id="retour" layoutX="513.0" layoutY="41.0" opacity="0.79" prefHeight="27.0" prefWidth="107.0" promptText="Return" style="-fx-border-color: #FF4C29;" />
+                        <Button fx:id="Search" layoutX="647.0" layoutY="42.0" mnemonicParsing="false" onAction="#Searchvol" opacity="0.79" prefHeight="26.0" prefWidth="100.0" style="-fx-border-color: #FF4C29; -fx-background-radius: 30;" text="Search" />
+                        <ComboBox fx:id="from" layoutX="113.0" layoutY="41.0" prefWidth="107.0" promptText="FROM" />
+                        <ComboBox fx:id="destination" layoutX="252.0" layoutY="41.0" prefWidth="107.0" promptText="TO" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="20.0" top="200.0" />
+                     </GridPane.margin>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <AnchorPane fx:id="slider" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="216.0" prefWidth="147.0" style="-fx-background-color: #082032; -fx-background-radius: 20;" AnchorPane.topAnchor="78.0">
+         <children>
+            <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="14.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="116.0285717010498">
+               <image>
+                  <Image url="@../img/icon_edit.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="14.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="110.10769233703613">
+               <image>
+                  <Image url="@../img/chec.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="14.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="112.6">
+               <image>
+                  <Image url="@../img/dash1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="home" layoutX="50.0" layoutY="37.0" minHeight="3.0" mnemonicParsing="false" onAction="#eventHome" opacity="0.91" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: #FF4C29; -fx-background-radius: 30; -fx-border-color: #2C394B;" text="Profil" textAlignment="CENTER" textFill="#082032" AnchorPane.bottomAnchor="152.0" AnchorPane.leftAnchor="49.19999999999999" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="37.0" />
+            <Button fx:id="checkflight" layoutX="54.0" layoutY="77.0" mnemonicParsing="false" onAction="#eventcheckfli" opacity="0.91" prefHeight="26.0" prefWidth="85.0" style="-fx-background-color: #FF4C29; -fx-background-radius: 30; -fx-border-color: #2C394B;" text="Check flight" textAlignment="CENTER" textFill="#082032" AnchorPane.leftAnchor="49.19999999999999" AnchorPane.rightAnchor="14.0" />
+            <Button fx:id="editflight" layoutX="54.0" layoutY="119.0" mnemonicParsing="false" onAction="#eventeditfli" opacity="0.91" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #FF4C29; -fx-background-radius: 030; -fx-border-color: #2C394B;" text="Edit flight" textAlignment="CENTER" textFill="#082032" AnchorPane.leftAnchor="49.19999999999999" AnchorPane.rightAnchor="14.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="20.0" layoutY="13.0" prefHeight="65.0" prefWidth="130.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff09" height="62.0" layoutX="-13.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="867.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#081f2ec6" height="36.0" layoutX="621.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" width="179.0" />
+            <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="217.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" x="555.0">
+               <image>
+                  <Image url="@../img/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Exit" fitHeight="26.0" fitWidth="28.0" layoutX="260.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" x="554.0">
+               <image>
+                  <Image url="@../img/exit.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="compte" layoutX="628.0" layoutY="26.0" prefHeight="18.0" prefWidth="141.0" textFill="#9e9696" />
+            <Label alignment="CENTER" layoutX="89.0" layoutY="12.0" prefHeight="36.0" prefWidth="57.0" text="Menu" textFill="WHITE" AnchorPane.bottomAnchor="17.599999999999994" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="731.8" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets left="25.0" />
+               </opaqueInsets>
+            </Label>
+            <Label alignment="CENTER" layoutX="89.0" layoutY="12.0" prefHeight="36.0" prefWidth="57.0" text="Menu" textFill="#f7f7f7" AnchorPane.bottomAnchor="17.599999999999994" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="731.8" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets left="25.0" />
+               </opaqueInsets>
+            </Label>
+            <ImageView fx:id="menuback" fitHeight="62.0" fitWidth="69.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-menu-arrondi-96.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="menu" fitHeight="62.0" fitWidth="69.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-menu-arrondi-96.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="208.0" layoutY="108.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="79.0" prefWidth="471.0" text="   Are you ready for our  trip ?" textFill="#060f56" AnchorPane.bottomAnchor="512.8" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="210.8" AnchorPane.topAnchor="108.0">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

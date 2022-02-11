@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="203.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.ControllerItems">
+   <children>
+      <ImageView fitHeight="203.0" fitWidth="494.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.19999999999998863" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.38028564453122726" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../img/background%20Item.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="villdep" alignment="CENTER" layoutX="31.0" layoutY="14.0" prefHeight="18.0" prefWidth="71.0" text="Villedep" textFill="WHITE" />
+      <Label fx:id="villarr" alignment="CENTER" layoutX="320.0" layoutY="14.0" prefHeight="18.0" prefWidth="71.0" text="Villearr" textFill="WHITE" />
+      <AnchorPane layoutX="-87.0" layoutY="73.0" prefHeight="84.0" prefWidth="526.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#064663" height="4.0" layoutX="239.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" width="211.0" />
+            <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="313.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-non-stop-flight-64.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="comp" alignment="CENTER" layoutX="104.0" layoutY="22.0" prefHeight="40.0" prefWidth="54.0" text="comp" />
+            <Label fx:id="escale" alignment="CENTER" layoutX="227.0" layoutY="5.0" prefHeight="18.0" prefWidth="197.0" text="escale">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+            <Label fx:id="hdep" alignment="CENTER" layoutX="165.0" layoutY="18.0" prefHeight="40.0" prefWidth="71.0" text="Hdep" />
+            <Label fx:id="harr" alignment="CENTER" layoutX="445.0" layoutY="16.0" prefHeight="40.0" prefWidth="86.0" text="Harr" />
+            <Label fx:id="aerodep" alignment="CENTER" layoutX="163.0" layoutY="65.0" prefHeight="14.0" prefWidth="86.0" text="aerodep" />
+            <Label fx:id="aeroarr" alignment="CENTER" layoutX="437.0" layoutY="65.0" prefHeight="18.0" prefWidth="86.0" text="aeroarr" />
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="90.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
